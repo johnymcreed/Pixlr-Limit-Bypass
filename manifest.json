@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "version": "1.07",
+    
+    "author": "johnymcreed",
+    "name": "Pixlr limit bypass",
+    "description": "Will bypass the 0/3 exports you can do in pixlr and allows you to do it infinitly.",
+    "icons": { "16": "logo.png" },
+
+    "permissions": [ "activeTab", "tabs", "storage" ],
+
+    "content_scripts": [{
+        "js": [ "script.js" ],
+        "matches": [ "https://pixlr.com/*" ]
+    }]
+}
